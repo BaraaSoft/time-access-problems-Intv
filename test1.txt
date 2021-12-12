@@ -1,0 +1,96 @@
+
+** you can use the language that you feel comfortable.
+** code will tested with other test cases
+** please preapre the documentation to setup and published in into your git and share it with us. ( or make it public)
+
+
+
+Q1
+
+There is a box. There are slips of paper with numbers written on them. 
+There is a target value. Put in the least slips of paper to add to the target value exactly. 
+If no combo of the slips can add to the target value, return -1.
+
+ /** 
+   * @param {number[]} slips
+   * @param {number} target 
+   * @return {number} 
+*/ 
+
+var leastSlips = function(slips, target) 
+{ 
+    // fill in your solution here. 
+}; 
+
+Example input & expected output ~ 
+
+Input : slips = [1, 1, 1, 2, 2, 3, 6, 7], 
+target = 5 
+
+Output : 2 
+Reason: 1+1+1+2 = 5, 1+1+1+2 = 5, 1+1+3 = 5, 2+3 = 5 ; 2+3 is the combo with the least slips
+
+
+
+
+Q2
+
+Given a boolean 2D matrix, find the number of islands. 
+A group of connected (horizontally, vertically or diagonally) +s forms an island. For example, 
+
+Example 1
+
+0+0
++0+
+0++
+
+Output : 1 island
+
+Example 2 
+
+000++0
++++00+
+000000
++0000+
+++00+0
+
+Output : 3 islands
+
+
+Example 3
+
+0000000000++++00+00++00++0+0+000+0+
+00++0000+++000000+00++0+0+0++++0+++
+00++++0+0+000+0+++0+++000++00+0+++0
+000+0000+0++0+++++++000++0+0+++++00
+0++++0+++00+00+0000+0++0000000++000
+0+0+++0++++000++++++++0000++00+0++0
+++0+00000+++0++0++000++++++000++0++
+0++0000+00+++0+++000+++0+0+0000+++0
+0++++000++00++0+000+0000++00+000000
++0++0+++0+++++0+++00+0+0+0++0++0+0+
+000000+0000++0000+++++++00++0+0+0++
+0+0+++++000++++0++++00+0++00++0++++
+++0++++0+0+000+000++00+0+000+0++0+0
+00+0+++++++0+0+000++000+++++00+0000
++0+0+0+++0++000000+++++0+00+++0+++0
++++0+0+++00++0++++++0+++00000000++0
+0+0++++0000+0+0++0+++00000000++0000
+00000+++0++0000+0000++0+0+0+++00++0
+0+0++0+0++++++00000++++0+000+0+00+0
+0+0000+0+0+++0++000++00+00+00+00+0+
+0+++++000+++0+++00++00++++++++++000
+000+0000++0+++000+0+00+0+000+++++00
+++0+0+0++0++++0+0+00+00+00++0+000+0
+0++000+0+00++00+++00++0+0000+++00++
+000+0++0+++0000+000+00++0+00+000+++
++000++0+0+0+++00++++++0+0+0+++0++00
+0+0++00++0000+00++000000++0+00++000
++0+++0+++0++00+000+++00++00+0+0+0++
+0000++++++++++0++00++0+0+000++0++++
++000000+0+0++0++0000++00000000++0+0
+
+Output : 2 islands
+
+
+
