@@ -33,7 +33,7 @@ var leastSlips = function (slips, target) {
     P[0] = 0;
     let positiveSum = 0;
     for (let j = 0; j < n; j++) {
-        if (slips[j] >= target) return 1;
+        if (slips[j] == target) return 1;
         P[j + 1] = P[j] + slips[j];
 
         if (slips[j] <= 0) continue;
@@ -41,7 +41,7 @@ var leastSlips = function (slips, target) {
         if (positiveSum < target) continue;
 
         for (let i = 1; i <= (min ? min - 1 : j + 1); i++)
-            if (P[j + 1] - P[j + 1 - i] >= target) {
+            if (P[j + 1] - P[j + 1 - i] == target) {
                 min = i;
                 break;
             }
@@ -72,4 +72,7 @@ var leastSlips = function (slips, target) {
 
 
 
+
+
 console.log(">> The least slips of paper: ",leastSlips([1, 1, 1, 2, 2, 3, 6, 7],5))
+console.log(">> The least slips of paper: ", leastSlips([1, 3, 6, 7], 2))
